@@ -3,7 +3,9 @@
  * 1. Common styles for general table things.
  * =====================================
  */
-
+img {
+  max-width: 100%;
+}
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -13,11 +15,11 @@ body {
 tr{
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   box-sizing: border-box;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
 }
 
-.rbcc {
+.rbcc{
   /*
    * rbcc -> reset - border - cellspacing - cellpading
    *
@@ -37,7 +39,10 @@ tr{
   background-color: #ffffff;
 }
 
-.sp{ /* Separator tr; props are actually contained by it's inner element atm. */ }
+.sp,
+body>br:first-child {
+   display: none;
+}
 
 .sp__inner{
   padding: 15px 0;
@@ -90,9 +95,9 @@ a{
  * ================
  */
 .footer{
-  border-top: transparent;
-  background: transparent;
-  padding: 36px 0px 41px 14px;
+  border-top: 2px solid #ececec;
+  background: rgba(221, 223, 225, 0.1);
+  padding: 36px 49px 41px 34px;
   color: #2d2d2d;
 }
 
@@ -105,6 +110,11 @@ a{
   background-color: #FFFFFF;
 }
 
+.footer__main{
+  /* NB: This prop fucks up the width on OS X, needs to be *JUST* attribute. */
+  width:100%;
+}
+
 .footer__main__signature{
   font-size: 14px;
   color: #2d2d2d;
@@ -113,43 +123,21 @@ a{
 }
 
 .footer__main__col1{
-  margin-right: 45px;
+  width: 20%;
   /* @todo gulp-inline-css doesn't parse align */
   align:left;
 }
-
-
-
-.footer__1{
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-
 
 .footer__main__col1__td{
   font-size: 14px;
   color: #2d2d2d;
   /* @todo gulp-inline-css doesn't parse align */
-  vertical-align: top;
-  padding-right: 25px;
-  min-width: 83px;
-}
-
-.footer__main__col1__td .social-media-icons{
-  margin-top: 15px;
+  align:center;
+  text-align: center;
 }
 
 .social-media img {
-  margin-top: 0px;
-}
-
-.social-media-icons div {
-  display: table-cell; 
-}
-
-.social-media-icon1 {
-  margin-right: 5px!important;
+  margin-top: 15px;
 }
 
 .footer__main a > span{
@@ -160,6 +148,7 @@ a{
 
 .footer__main__col2{
   font-size: 16px;
+  width:80%;
   /* @todo gulp-inline-css doesn't parse align */
   align:right;
 }
@@ -167,17 +156,15 @@ a{
 .footer__main__col2__contacts{
   margin-top: 12px;
   line-height: 31px;
-  font-size: 13px;
 }
 
 .footer__main__col2__td__img{
   border: 0;
   padding-top: 6px;
   padding-left:10px;
-}
-
-.footer__main__col2__td strong{
-  font-size: 14px;
+  max-width: 100%;
+  max-height:34px;
+  height: auto;
 }
 
 .footer__main__col3{
@@ -186,10 +173,13 @@ a{
   align:right;
 }
 
-.footer__main__col3__td {
-  padding-top: 92px;
+.footer__main__col3__td{
+  vertical-align: bottom;
 }
 
-.footer__2 .footer__main__3__td{
-  margin-top: 15px;
+.footer__main__col3__td__img{
+  border: 0;
+  max-width: 100%;
+  max-height:45px;
+  height: auto;
 }

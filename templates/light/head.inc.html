@@ -15,17 +15,19 @@
    * 4. Basic responsive stuff.
    * ================
    */
+   @media only screen and (max-width:540px){
+    .footer__2 .footer__main__col3__td{
+      padding-top: 20px!important;
+      display: block!important;
+    }
+
+    .footer__3 {
+      display: none!important;;
+    }
+  }
   @media only screen and (max-width:480px){
     .footer td{
-      font-size: 12px!important;
-    }
-
-    .footer__main__col1{
-      width: 100%!important;
-    }
-
-    .footer__main__col2{
-      width: 100%!important;
+      font-size: 11px!important;
     }
 
     .footer__main__col2__td{
@@ -35,6 +37,14 @@
 
     .footer__main__col2__td__img{
       padding-left:0!important;
+    }
+
+    .footer__main__col3__td {
+      text-align: left!important;
+    }
+
+    .footer__main__col3__td__img {
+      max-height: 35px!important;
     }
 
     .gray-hr hr{
