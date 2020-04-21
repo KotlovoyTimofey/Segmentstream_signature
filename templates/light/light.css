@@ -136,6 +136,10 @@ a{
   min-width: 83px;
 }
 
+.footer__main__col1__td__img{
+  border-radius: 50%;
+}
+
 .footer__main__col1__td .social-media-icons{
   margin-top: 15px;
 }
@@ -145,7 +149,7 @@ a{
 }
 
 .social-media-icons div {
-  display: table-cell; 
+  display: table-cell;
 }
 
 .social-media-icon1 {
@@ -165,7 +169,7 @@ a{
 }
 
 .footer__main__col2__contacts{
-  margin-top: 12px;
+  margin-top: 5px;
   line-height: 31px;
   font-size: 13px;
 }
