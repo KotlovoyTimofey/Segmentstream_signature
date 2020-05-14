@@ -31,9 +31,9 @@ fs
 
 /** By default templates will be built into '/dist', then gulp will watch for changes in '/src'. */
 gulp.task(
-  'default', 
+  'default',
   [
-    'dupe', 
+    'dupe',
     'less',
     'sass',
     'postcss',

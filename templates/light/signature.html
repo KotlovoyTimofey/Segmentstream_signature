@@ -1,13 +1,45 @@
-<!-- @include head.inc.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- @echo stylesheets -->
+</head>
 
 <body>
-  <br/> <!-- <br/> Makes it easier to add text when composing -->
-
   <table class="main rbcc">
     <tr class="sp"><td class="sp__inner"></td></tr>
-
     <tr class="rbcc">
-      <!-- @include footer.inc.html -->
+      <td class="footer" nowrap width="350">
+        <table class="rbcc footer__2">
+          <td class="footer__main__col1__td" align="left">
+            <img src="<!-- @echo portrait -->" alt="<!-- @echo logoAltName -->" class="footer__main__col1__td__img" width="83" height="83"/>
+            <div class="social-media-icons">
+              <a class="social-media social-media-icon1" href="<!-- @echo facebook -->" target="_blank">
+                <img src="https://segmentstream.com/images/signatures/facebook.png" width="20" height="20"/>
+              </a>
+              <a class="social-media social-media-icon2" href="<!-- @echo linkedIn -->" target="_blank">
+                <img src="https://segmentstream.com/images/signatures/linkedin.png" width="20" height="20"/>
+              </a>
+            </div>
+          </td>
+          <td class="footer__main__col2__td" align="left">
+            <strong style="color: #000"><!-- @echo name --><br /></strong>
+            <span style="font-size: 14px; color: rgba(45, 45, 45, 0.5)"><!-- @echo position --></span><br />
+            <div class="footer__main__col2__contacts">
+              <!-- @echo contactTel -->
+              <!-- <br> -->
+              <a href="mailto:<!-- @echo contactMail -->" target="_blank"><!-- @echo contactMail --></a><br />
+              <a href="<!-- @echo website -->" target="_blank"><!-- @echo websiteName --></a>
+            </div>
+            <div class="footer__main__3__td" align="left">
+              <a href="<!-- @echo website -->" target="_blank">
+                <img src="<!-- @echo logoUrl -->" alt="<!-- @echo logoAlt -->" class="footer__main__3__td__img" width="177" height="35"/>
+              </a>
+            </div>
+          </td>
+        </table>
+      </td>
     </tr>
   </table>
 </body>

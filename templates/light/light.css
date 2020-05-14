@@ -1,9 +1,22 @@
+1. https://docs.segmentstream.com/javascript-sdk/snippet - empty page
+2. https://docs.segmentstream.com/javascript-sdk/variables - date updated, incorrect link http://shop1.driveback.ru/?ddm_test_mode=1
+3. https://docs.segmentstream.com/javascript-sdk/events#eventNaming - incorrect link "Automatic sending of the Viewed Page event", "is explained in the helper functions section.", " event naming convention"
+4. https://docs.segmentstream.com/javascript-sdk/integrations - new first screenshot
+5. https://docs.segmentstream.com/javascript-sdk/scripts - incorrect link " helper functions"
+6. https://docs.segmentstream.com/javascript-sdk/settings - incorrect link "integration error tracking module"
+7. https://docs.segmentstream.com/digitaldata/events - incorrect link "naming convention", "events"
+8. https://docs.segmentstream.com/digitaldata/recommendation#thirdPartySystems - incorrect link " third-party system developer guide"
+8. https://docs.segmentstream.com/digitaldata/user - incorrect link "session timeout"
+
+
 /*
  * =====================================
  * 1. Common styles for general table things.
  * =====================================
  */
-
+img {
+  max-width: 100%;
+}
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -37,7 +50,10 @@ tr{
   background-color: #ffffff;
 }
 
-.sp{ /* Separator tr; props are actually contained by it's inner element atm. */ }
+.sp,
+body>br:first-child {
+   display: none;
+}
 
 .sp__inner{
   padding: 15px 0;
@@ -134,6 +150,7 @@ a{
   vertical-align: top;
   padding-right: 25px;
   min-width: 83px;
+  text-align: center;
 }
 
 .footer__main__col1__td__img{
@@ -196,4 +213,60 @@ a{
 
 .footer__2 .footer__main__3__td{
   margin-top: 15px;
+}
+
+@media only screen and (max-width:540px){
+    .footer__2 .footer__main__col3__td{
+      padding-top: 20px!important;
+      display: block!important;
+    }
+
+    .footer__3 {
+      display: none!important;;
+    }
+  }
+@media only screen and (max-width:480px){
+  .footer td{
+    font-size: 11px!important;
+  }
+
+  .footer__main__col2__td{
+    text-align: left;
+    padding-bottom:20px;
+  }
+
+  .footer__main__col2__td__img{
+    padding-left:0!important;
+  }
+
+  .footer__main__col3__td {
+    text-align: left!important;
+  }
+
+  .footer__main__col3__td__img {
+    max-height: 35px!important;
+  }
+
+  .gray-hr hr{
+    margin-bottom:10px!important;
+    margin-top:10px!important;
+  }
+}
+
+@media only screen and (min-width:1025px){
+  /* After iPad size */
+  .body-with-bg{
+    background-color: #F1F1F1;
+  }
+
+  .body-with-bg .main{
+    border:1px solid #E9E9E9!important; /* Sorry! */
+    max-width:960px;
+    margin:0 auto;
+  }
+
+  .background{
+    padding:30px;
+    background-color: #F1F1F1;
+  }
 }
